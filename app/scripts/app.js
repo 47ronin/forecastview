@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name forecastivewApp
+ * @name forecastviewApp
  * @description
- * # forecastivewApp
+ * # forecastviewApp
  *
  * Main module of the application.
  */
 angular
-  .module('forecastivewApp', [
+  .module('forecastviewApp', [
     'ngAnimate',
     'ngAria',
     'ngCookies',

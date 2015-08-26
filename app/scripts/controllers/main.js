@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name forecastivewApp.controller:MainCtrl
+ * @name forecastviewApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the forecastivewApp
+ * Controller of the forecastviewApp
  */
-angular.module('forecastivewApp')
+angular.module('forecastviewApp')
   .controller('MainCtrl', ['$http', '$scope', '$filter', 'moment', function($http, $scope, $filter, moment) {
     var APIkey = 'FORECAST_API_KEY'; // forecast.io API key
 		var targetGeo = '32.7099436,-117.1576964'; // latitude, longitude

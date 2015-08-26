@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name forecastivewApp.controller:AboutCtrl
+ * @name forecastviewApp.controller:AboutCtrl
  * @description
  * # AboutCtrl
- * Controller of the forecastivewApp
+ * Controller of the forecastviewApp
  */
-angular.module('forecastivewApp')
+angular.module('forecastviewApp')
   .controller('AboutCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
