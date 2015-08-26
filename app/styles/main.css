@@ -1,0 +1,169 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700');
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+  background-color: transparent;
+  height: 100%;
+  padding: 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#wrapper {
+  height: 100%;
+}
+#wrap {
+  background:
+    linear-gradient(
+      rgba(0, 59, 85, 0.5),
+      rgba(0, 51, 85, 0.5)
+    ),
+    url('../images/texture_sunsky1.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: 100% 100%;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -4vh;
+}
+/* Set fixed height of footer */
+#push, #footer {
+  height: 4vh;
+}
+
+h1, h2 {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/* 1080p displays -----------------------------------------------------------*/
+@media (min-width: 1500px) {
+  .container {
+    width: 1920px;
+  }
+}
+
+/* 4K displays --------------------------------------------------------------*/
+@media (min-width: 3500px) {
+  .container {
+    width: 3840px;
+  }
+}
+
+/* Overrides */
+.todaySummary {
+  color: white;
+  text-align: center;
+  text-shadow: 0.1vh 0.1vh 0.5vh black;
+  padding-top: 2vh;
+  padding-bottom: 4vh;
+}
+.todaySummary h1, h2 {
+  font-size: 3vh;
+}
+.equal, .equal > div[class*='col-'] {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex:1 1 auto;
+}
+.spacer {
+
+}
+.panel {
+  background:
+    linear-gradient(
+      rgba(0, 59, 85, 0.8),
+      rgba(0, 59, 85, 0.8)
+    ) !important;
+}
+.panel-primary {
+  border-color: #003B55;
+}
+.panel-heading {
+  background-color: transparent !important;
+  background:
+    linear-gradient(
+      rgba(0, 59, 85, 1),
+      rgba(0, 59, 85, 1)
+    ) !important;
+  border-color: inherit !important;
+}
+.panel-heading h2 {
+  font-size: 2.7vh;
+  text-transform: uppercase;
+}
+.panel-heading h2 small {
+  color: white;
+  text-transform: none;
+}
+.panel-body {
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+.panel-body hr {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+.mainTemp {
+  color: white;
+  font-size: 7vh;
+  line-height: 6vh;
+  padding-left: 27%;
+}
+.mainTemp .wi {
+  color: #aaa;
+  font-size: 3.5vh;
+  vertical-align: middle;
+}
+.humidity {
+
+}
+.dataline {
+  text-align: center;
+  color: white;
+  font-size: 3vh;
+  line-height: normal;
+}
+.dataline .wi {
+  color: #aaa;
+  font-size: 1.8vh;
+  vertical-align: middle;
+}
+.dailySummary {
+  color: white;
+  font-size: 3vh;
+}
+div.dailyDate {
+  text-align: right;
+}
+div.dailywIcon {
+  text-align: center;
+}
+div.dailywIcon h3 {
+  font-size: 5vh;
+}
+.alertCrawl {
+  color: white;
+  text-shadow: 0.1vh 0.1vh 0.5vh black;
+  font-size: 2vh;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0); /* accelerated */
+}

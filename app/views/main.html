@@ -1,0 +1,70 @@
+<div id="wrap">
+<div class="container">
+<div class="row todaySummary">
+  <div class="col-lg-12">
+    <h1>
+      {{ todaySummary }}
+    </h1>
+    <h2 ng-class="todayIcon">
+    </h2>
+  </div>
+</div> <!-- row todaySummary -->
+
+<div class="row equal dailyForecasts">
+  <div class="col-lg-1">
+    <!-- spacer -->
+  </div>
+
+  <div ng-repeat="forecast in forecasts | limitTo: 5" class="col-lg-2">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <div class="row">
+          <div class="col-md-7 dailyDate">
+            <h2>{{ forecasts.dDay[$index] }}<br><small>{{ forecasts.dDate[$index] }}</small></h2>
+          </div>
+          <div class="col-md-5 dailywIcon">
+            <h3 ng-class="forecasts.dIcon[$index]"></h3>
+          </div>
+        </div>
+
+      </div>
+      <div class="panel-body">
+        <p class="mainTemp">
+          <i class="wi wi-thermometer"></i> {{ forecasts.dMaxTemp[$index] }}<i class="wi wi-fahrenheit"></i>
+        </p>
+        <p class="mainTemp">
+          <i class="wi wi-thermometer-exterior"></i> {{ forecasts.dMinTemp[$index] }}<i class="wi wi-fahrenheit"></i>
+        </p>
+        <hr>
+        <p class="dataline humidity">
+          <i class="wi wi-humidity"></i> {{ forecasts.dHumidity[$index] }}
+        </p>
+        <p class="dataline">
+          <i class="wi wi-sunrise"></i> {{ forecasts.dSunrise[$index] }}
+        </p>
+        <p class="dataline">
+          <i class="wi wi-horizon"></i> {{ forecasts.dSunset[$index] }}
+        </p>
+        <hr>
+        <p class="dailySummary">
+          {{ forecasts.dSummary[$index] }}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-1">
+    <!-- spacer -->
+  </div>
+</div> <!-- row equal dailyForecasts -->
+
+</div> <!-- container -->
+
+<div id="push"></div>
+</div> <!-- wrap -->
+
+<div id="footer">
+  <marquee class="alertCrawl" behavior="scroll" direction="left">
+    {{ alerts }}
+  </marquee>
+</div>
