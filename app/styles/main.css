@@ -22,6 +22,14 @@ body {
   height: 100%;
 }
 #wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -4vh;
+}
+/* Dynamic background images, based on forecast -----------------------------*/
+#wrap.partly-cloudy-day {
   background:
     linear-gradient(
       rgba(0, 59, 85, 0.5),
@@ -33,12 +41,8 @@ body {
     -o-background-size: cover;
     background-size: cover;
     background-size: 100% 100%;
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  /* Negative indent footer by its height */
-  margin: 0 auto -4vh;
 }
+
 /* Set fixed height of footer */
 #push, #footer {
   height: 4vh;
