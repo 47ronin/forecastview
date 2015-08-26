@@ -26,7 +26,7 @@ angular.module('forecastviewApp')
 		];
     $http.jsonp(stationURL)
     .success(function(data){
-      var dayDay = [], dayDate = [], dayIcon = [], dayMinTemp = [], dayMaxTemp = [], daySummary = [], dayHumidity = [], daySunrise = [], daySunset = [];
+      var dayDay = [], dayDate = [], dayTheme = [], dayIcon = [], dayMinTemp = [], dayMaxTemp = [], daySummary = [], dayHumidity = [], daySunrise = [], daySunset = [];
       var wRaw = data.daily;
       var searchIcon = $filter('filter')(iconArray, {oIcon: wRaw.icon});
       $scope.todayIcon = searchIcon[0].wIcon;
@@ -34,6 +34,7 @@ angular.module('forecastviewApp')
       $scope.forecasts = angular.forEach(wRaw.data, function(dayArray,index){
           dayDay[index] = moment(dayArray.time, 'X').format('ddd');
           dayDate[index] = moment(dayArray.time, 'X').format('MMM D');
+          dayTheme[index] = dayArray.icon;
           searchIcon = $filter('filter')(iconArray, {oIcon: dayArray.icon});
           dayIcon[index] = searchIcon[0].wIcon;
           dayMinTemp[index] = Math.round(dayArray.temperatureMin);
@@ -47,6 +48,7 @@ angular.module('forecastviewApp')
       console.log($scope.alerts);
       $scope.forecasts.dDay = dayDay;
       $scope.forecasts.dDate = dayDate;
+      $scope.forecasts.dTheme = dayTheme;
       $scope.forecasts.dIcon = dayIcon;
       $scope.forecasts.dMinTemp = dayMinTemp;
       $scope.forecasts.dMaxTemp = dayMaxTemp;
