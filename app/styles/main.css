@@ -75,8 +75,8 @@ body {
 #wrap.clear-day {
   background:
     linear-gradient(
-      rgba(0, 59, 85, 0.3),
-      rgba(0, 51, 85, 0.3)
+      rgba(0, 59, 85, 0.4),
+      rgba(0, 51, 85, 0.4)
     ),
     url('../images/texture_clearsky1.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
