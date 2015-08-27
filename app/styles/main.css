@@ -29,6 +29,20 @@ body {
   margin: 0 auto -4vh;
 }
 /* Dynamic background images, based on forecast -----------------------------*/
+#wrap.rain {
+  background:
+    linear-gradient(
+      rgba(0, 59, 85, 0.5),
+      rgba(0, 51, 85, 0.5)
+    ),
+    url('../images/texture_lightrain2.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: 100% 100%;
+}
+
 #wrap.partly-cloudy-day {
   background:
     linear-gradient(
@@ -36,6 +50,20 @@ body {
       rgba(0, 51, 85, 0.5)
     ),
     url('../images/texture_sunsky1.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: 100% 100%;
+}
+
+#wrap.clear-day {
+  background:
+    linear-gradient(
+      rgba(0, 59, 85, 0.3),
+      rgba(0, 51, 85, 0.3)
+    ),
+    url('../images/texture_clearsky1.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
