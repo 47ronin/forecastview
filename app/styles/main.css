@@ -59,6 +59,19 @@ body {
     background-size: 100% 100%;
 }
 
+#wrap.partly-cloudy-night {
+  background:
+    linear-gradient(
+      rgba(0, 59, 85, 0.5),
+      rgba(0, 51, 85, 0.5)
+    ),
+    url('../images/texture_cloudydark1.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: 100% 100%;
+}
 #wrap.clear-day {
   background:
     linear-gradient(
