@@ -87,6 +87,13 @@ body {
   -webkit-filter: brightness(1.4);
   filter: brightness(1.4);
 }
+
+.logoBrand {
+  height: 8vh;
+  background: url('../images/logo_brand.png') no-repeat center;
+  background-size: contain;
+  -webkit-filter: drop-shadow(0.1vh 0.1vh 0.3vh rgba(0,0,0,0.4));
+  -webkit-backface-visibility: hidden;
 }
 
 /* Set fixed height of footer */
