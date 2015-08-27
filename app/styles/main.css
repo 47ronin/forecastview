@@ -123,8 +123,8 @@ h1, h2 {
 .todaySummary {
   color: white;
   text-align: center;
-  text-shadow: 0.1vh 0.1vh 0.5vh black;
-  padding-top: 2vh;
+  text-shadow: 0.1vh 0.1vh 0.3vh black;
+  padding-top: 2.5vh;
   padding-bottom: 4vh;
 }
 .todaySummary h1, h2 {
