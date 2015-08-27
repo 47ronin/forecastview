@@ -44,8 +44,13 @@ angular.module('forecastviewApp')
           daySunrise[index] =  moment(dayArray.sunriseTime, 'X').format('h:mm a');
           daySunset[index] =  moment(dayArray.sunsetTime, 'X').format('h:mm a');
       });
-      $scope.alerts = data.alerts[0].description.replace(/\\n/g,' ');
-      console.log($scope.alerts);
+      if (data.alerts) {
+        $scope.alerts = data.alerts[0].description.replace(/\\n/g,' ');
+        console.log($scope.alerts);
+      } else {
+        $scope.alerts = '';
+        console.log('No alerts');
+      }
       $scope.forecasts.dDay = dayDay;
       $scope.forecasts.dDate = dayDate;
       $scope.forecasts.dTheme = dayTheme;
