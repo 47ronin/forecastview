@@ -148,6 +148,9 @@ h1, h2 {
       rgba(0, 59, 85, 0.8),
       rgba(0, 59, 85, 0.8)
     ) !important;
+  -webkit-box-shadow: 0.1vh 0.1vh 0.7vh 0 rgba(0, 0, 0, 0.4);
+  -moz-box-shadow:    0.1vh 0.1vh 0.7vh 0 rgba(0, 0, 0, 0.4);
+  box-shadow:         0.1vh 0.1vh 0.7vh 0 rgba(0, 0, 0, 0.4);
 }
 .panel-primary {
   border-color: #003B55;
