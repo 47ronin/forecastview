@@ -11,9 +11,9 @@ Run `grunt` for building and `grunt serve` for preview.
 
 Running `grunt test` will run the unit tests with karma.
 
-### Design
-
-CSS flexbox utilized to get the daily weather summary panels rendered at the same height. The background images switch based on the current day’s icon, as reported by forecast.io’s API.
+### Features
+- The background images switch based on the current day’s icon, as reported by forecast.io’s API
+- National Weather Service alerts as a crawl in the footer
 
 ### Solutions to initial challenges
 - API JSON response array parsing then assigning
