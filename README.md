@@ -12,13 +12,14 @@ Run `grunt` for building and `grunt serve` for preview.
 Running `grunt test` will run the unit tests with karma.
 
 ### Features
-- The background images switch based on the current day’s icon, as reported by forecast.io’s API
-- National Weather Service alerts as a crawl in the footer
+- The background image switches based on the current day’s summary from the [forecast.io](https://developer.forecast.io/) API
+- If present in the JSON response, weather alerts appear as a crawl in the footer
 
 ### Solutions to initial challenges
-- API JSON response array parsing then assigning
-- Getting local array results back into $scope
+- Used Angular.forEach to parse the API JSON response arrays into local ones
+- (Clumsy) Reassigned local array variables back to $scope since they couldn't be done within the forEach
 - Used CSS flexbox to get panels the same height, regardless of content length
 - Used linear-gradient to overlay color on full-screen imagary, then shuffled div arrangement to get dynamic background images
-- Adjusting Gruntfile to include Weather Icons in dist build
-- Nested divs to call ng-view and maintain a sticky footer
+- Adjusted Gruntfile to include Weather Icons in dist build
+- Nested divs to call ng-view and maintain a sticky footer within the Bootstrap framework
+- Replaced deprecated `marquee` for weather alerts with [HTML5-Marquee](https://github.com/muchweb/html5-marquee) by [Aleks](https://github.com/muchweb)
