@@ -57,14 +57,11 @@
     <!-- spacer -->
   </div>
 </div> <!-- row equal dailyForecasts -->
-
 </div> <!-- container -->
 
 <div id="push"></div>
 </div> <!-- wrap -->
 
 <div id="footer">
-  <marquee class="alertCrawl" behavior="scroll" direction="left">
-    {{ alerts }}
-  </marquee>
+  <div class="marquee marquee-speed-custom alertCrawl" style="-webkit-animation-duration: 90s; animation-duration: 90s;" data-marquee="{{ alerts }}"></div>
 </div>
