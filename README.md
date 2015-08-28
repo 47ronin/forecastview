@@ -22,4 +22,4 @@ Running `grunt test` will run the unit tests with karma.
 - Used linear-gradient to overlay color on full-screen imagary, then shuffled div arrangement to get dynamic background images
 - Adjusted Gruntfile to include Weather Icons in dist build
 - Nested divs to call ng-view and maintain a sticky footer within the Bootstrap framework
-- Replaced deprecated `marquee` for weather alerts with [HTML5-Marquee](https://github.com/muchweb/html5-marquee) by [Aleks](https://github.com/muchweb)
+- Replaced deprecated `marquee` for weather alerts with [HTML5-Marquee](https://github.com/muchweb/html5-marquee) by Aleks (@muchweb)
