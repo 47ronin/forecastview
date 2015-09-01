@@ -34,22 +34,24 @@ body {
 #wrap.rain {
   background:
     linear-gradient(
-      rgba(0, 59, 85, 0.6),
-      rgba(0, 51, 85, 0.6)
+      rgba(0, 59, 85, 0.5),
+      rgba(0, 51, 85, 0.5)
     ),
-    url('../images/texture_lightrain2.jpg') no-repeat center center fixed;
+    url('../images/texture_lightrain1.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     background-size: 100% 100%;
+    -webkit-filter: brightness(1.2);
+    filter: brightness(1.2);
 }
 
-#wrap.partly-cloudy-day {
+#wrap.partly-cloudy-day, #wrap.clear-day {
   background:
     linear-gradient(
-      rgba(0, 59, 85, 0.5),
-      rgba(0, 51, 85, 0.5)
+      rgba(0, 59, 85, 0.4),
+      rgba(0, 51, 85, 0.4)
     ),
     url('../images/texture_sunsky1.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -62,8 +64,8 @@ body {
 #wrap.partly-cloudy-night {
   background:
     linear-gradient(
-      rgba(0, 59, 85, 0.5),
-      rgba(0, 51, 85, 0.5)
+      rgba(0, 59, 85, 0.4),
+      rgba(0, 51, 85, 0.4)
     ),
     url('../images/texture_cloudydark1.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -71,21 +73,66 @@ body {
     -o-background-size: cover;
     background-size: cover;
     background-size: 100% 100%;
+    -webkit-filter: brightness(1.2);
+    filter: brightness(1.2);
 }
-#wrap.clear-day {
+
+#wrap.snow {
   background:
     linear-gradient(
-      rgba(0, 59, 85, 0.4),
-      rgba(0, 51, 85, 0.4)
+      rgba(0, 59, 85, 0.6),
+      rgba(0, 51, 85, 0.6)
     ),
-    url('../images/texture_clearsky1.jpg') no-repeat center center fixed;
+    url('../images/texture_snow1.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     background-size: 100% 100%;
-  -webkit-filter: brightness(1.4);
-  filter: brightness(1.4);
+}
+
+#wrap.sleet {
+  background:
+    linear-gradient(
+      rgba(0, 59, 85, 0.5),
+      rgba(0, 51, 85, 0.5)
+    ),
+    url('../images/texture_sleet1.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: 100% 100%;
+}
+
+#wrap.fog {
+  background:
+    linear-gradient(
+      rgba(0, 59, 85, 0.4),
+      rgba(0, 51, 85, 0.4)
+    ),
+    url('../images/texture_fog1.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: 100% 100%;
+}
+
+#wrap.wind {
+  background:
+    linear-gradient(
+      rgba(0, 59, 85, 0.4),
+      rgba(0, 51, 85, 0.4)
+    ),
+    url('../images/texture_wind1.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: 100% 100%;
+    -webkit-filter: brightness(1.3);
+    filter: brightness(1.3);
 }
 
 .logoBrand {
