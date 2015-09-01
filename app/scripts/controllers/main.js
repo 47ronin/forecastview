@@ -11,7 +11,8 @@ angular.module('forecastviewApp')
   .controller('MainCtrl', ['$http', '$scope', '$filter', 'moment', function($http, $scope, $filter, moment) {
     var APIkey = 'FORECAST_API_KEY'; // forecast.io API key
 		var targetGeo = '32.7099436,-117.1576964'; // latitude, longitude
-		var stationURL = 'https://api.forecast.io/forecast/' + APIkey + '/' + targetGeo + '?callback=JSON_CALLBACK';
+    var apiOptions = '?callback=JSON_CALLBACK&exclude=currently,minutely,hourly'
+		var stationURL = 'https://api.forecast.io/forecast/' + APIkey + '/' + targetGeo + apiOptions;
     var iconArray = [
 			{oIcon: 'clear-day',           wIcon: 'wi wi-day-sunny'},
 			{oIcon: 'clear-night',         wIcon: 'wi wi-stars'},
