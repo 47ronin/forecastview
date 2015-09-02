@@ -36,7 +36,7 @@ angular.module('forecastviewApp')
     })
     .success(function(data){
       var httpCache = $cacheFactory.get('$http');
-      var dayDay = [], dayDate = [], dayTheme = [], dayMinTemp = [], dayMaxTemp = [], daySummary = [], dayHumidity = [], daySunrise = [], daySunset = [];
+      var dayDay = [], dayDate = [], dayTheme = [], dayIcon = [], dayMinTemp = [], dayMaxTemp = [], daySummary = [], dayHumidity = [], daySunrise = [], daySunset = [];
       var wRaw = httpCache.get(stationURL)[1].daily;
       var searchIcon = $filter('filter')(iconArray, {oIcon: wRaw.icon});
       $scope.todayIcon = searchIcon[0].wIcon;
@@ -46,6 +46,7 @@ angular.module('forecastviewApp')
           dayDate[index] = moment(dayArray.time, 'X').format('MMM D');
           dayTheme[index] = dayArray.icon;
           searchIcon = $filter('filter')(iconArray, {oIcon: dayArray.icon});
+          dayIcon[index] = searchIcon[0].wIcon;
           dayMinTemp[index] = Math.round(dayArray.temperatureMin);
           dayMaxTemp[index] = Math.round(dayArray.temperatureMax);
           daySummary[index] = dayArray.summary;
@@ -63,6 +64,7 @@ angular.module('forecastviewApp')
       $scope.forecasts.dDay = dayDay;
       $scope.forecasts.dDate = dayDate;
       $scope.forecasts.dTheme = dayTheme;
+      $scope.forecasts.dIcon = dayIcon;
       $scope.forecasts.dMinTemp = dayMinTemp;
       $scope.forecasts.dMaxTemp = dayMaxTemp;
       $scope.forecasts.dSummary = daySummary;
