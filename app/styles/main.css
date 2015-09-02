@@ -152,6 +152,13 @@ h1, h2 {
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
+/* 720p displays -----------------------------------------------------------*/
+@media (min-width: 1200px) {
+  .container {
+    width: 1280px;
+  }
+}
+
 /* 1080p displays -----------------------------------------------------------*/
 @media (min-width: 1500px) {
   .container {
