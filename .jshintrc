@@ -22,6 +22,7 @@
   "white"    : false,
   "globals"   : {
     "APIkey"               : true,
+    "targetGeo"            : true,
     "$"                    : false,
     "angular"              : false,
     "browser"              : false,
