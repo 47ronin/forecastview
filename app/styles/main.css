@@ -28,8 +28,13 @@ body {
   height: auto !important;
   height: 100%;
   /* Negative indent footer by its height */
-  margin: 0 auto -4vh;
+  margin: 0 auto -6.5vh;
 }
+/* Set fixed height of footer */
+#push, #footer {
+  height: 6.5vh;
+}
+
 /* Dynamic background images, based on forecast -----------------------------*/
 #wrap.rain {
   background:
@@ -141,11 +146,6 @@ body {
   background-size: contain;
   -webkit-filter: drop-shadow(0.1vh 0.1vh 0.3vh rgba(0,0,0,0.4));
   -webkit-backface-visibility: hidden;
-}
-
-/* Set fixed height of footer */
-#push, #footer {
-  height: 4vh;
 }
 
 h1, h2 {
