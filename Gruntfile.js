@@ -32,11 +32,11 @@ grunt.loadNpmTasks('grunt-gh-pages');
 
     // Deploy dist build folder to GitHub gh-pages
     'gh-pages': {
-      options: {
-        base: 'dist'
+        options: {
+          base: 'dist'
+        },
+        src: ['**']
       },
-      src: ['**']
-    },
 
     // Project settings
     yeoman: appConfig,
