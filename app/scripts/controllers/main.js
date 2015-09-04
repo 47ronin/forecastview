@@ -12,7 +12,6 @@ angular.module('forecastviewApp')
     $http.defaults.headers.common['Cache-Control'] = 'max-age=900, must-revalidate';
   })
   .controller('MainCtrl', ['$http', '$scope', '$filter', 'moment', '$cacheFactory', function($http, $scope, $filter, moment, $cacheFactory) {
-    var APIkey = 'FORECAST_API_KEY'; // forecast.io API key
 		var targetGeo = '32.7099436,-117.1576964'; // latitude, longitude
     var apiOptions = '?callback=JSON_CALLBACK&exclude=currently,minutely,hourly';
 		var stationURL = 'https://api.forecast.io/forecast/' + APIkey + '/' + targetGeo + apiOptions;

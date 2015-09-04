@@ -21,6 +21,7 @@
   "smarttabs": true,
   "white"    : false,
   "globals"   : {
+    "APIkey"               : true,
     "$"                    : false,
     "angular"              : false,
     "browser"              : false,
