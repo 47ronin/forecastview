@@ -28,6 +28,12 @@ The default weather theme images are free stock photos from [Pexels](https://www
 
 Run `grunt serve` for preview, make customizations **only** in the `app/` folder, and `grunt build` to build a release candidate. When you are ready, deploy the contents of the `dist/` directory to a webserver and have your digital media player fetch its URL.
 
+## Author
+
+- Email: glenn@47ronin.com
+- Twitter: https://twitter.com/gbatuyong
+- GitHub: https://github.com/47ronin
+
 ### Solutions to initial challenges
 - Used Angular.forEach to parse the API JSON response arrays into local ones
 - (Clumsy) Reassigned local array variables back to $scope since they couldn't be done within the forEach
