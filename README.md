@@ -19,8 +19,8 @@ Clone or fork this repository and ensure the following tools are available:
 From within the project folder, run `npm install` then `bower install`. Grab some coffee :coffee: …this could take a while.
 
 The `app/scripts/options.js` file contains two required variables for the application to function:
-1. `APIkey`: A free API key from [Forecast.io](https://developer.forecast.io/) is required to draw in the live JSON data. Replace the value `FORECAST_API_KEY`
-2. `targetGeo`: To show localized weather forecasts in a desired area, replace the latitude and longitude data
+- `APIkey`: A free API key from [Forecast.io](https://developer.forecast.io/) is required to draw in the live JSON data. Replace the value `FORECAST_API_KEY`
+- `targetGeo`: To show localized weather forecasts in a desired area, replace the latitude and longitude data
 
 The default weather theme images are free stock photos from [Pexels](https://www.pexels.com/), and are located in the `app/images/` folder.
 
