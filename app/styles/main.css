@@ -66,7 +66,7 @@ body {
     background-size: 100% 100%;
 }
 
-#wrap.partly-cloudy-night {
+#wrap.partly-cloudy-night, #wrap.cloudy {
   background:
     linear-gradient(
       rgba(0, 59, 85, 0.4),
