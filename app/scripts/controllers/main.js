@@ -9,7 +9,7 @@
  */
 angular.module('forecastviewApp')
   .run(function($http){
-    $http.defaults.headers.common['Cache-Control'] = 'max-age=900, must-revalidate';
+    $http.defaults.headers.common['Cache-Control'] = 'max-age=300, must-revalidate';
   })
   .controller('MainCtrl', ['$http', '$scope', '$filter', 'moment', '$cacheFactory', function($http, $scope, $filter, moment, $cacheFactory) {
     var apiOptions = '?callback=JSON_CALLBACK&exclude=currently,minutely,hourly';
@@ -29,7 +29,7 @@ angular.module('forecastviewApp')
     $http.jsonp(stationURL, {
       cache: true,
       headers: {
-        'Cache-Control': 'max-age=900, must-revalidate'
+        'Cache-Control': 'max-age=300, must-revalidate'
       }
     })
     .success(function(data){
