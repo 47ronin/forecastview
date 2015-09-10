@@ -30,6 +30,7 @@ Run `grunt serve` for preview, make customizations **only** in the `app/` folder
 
 ## Author
 
+- Name: Glenn Batuyong
 - Email: glenn@47ronin.com
 - Twitter: https://twitter.com/gbatuyong
 - GitHub: https://github.com/47ronin
