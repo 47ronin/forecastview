@@ -43,3 +43,4 @@ Run `grunt serve` for preview, make customizations **only** in the `app/` folder
 - Nested divs to call ng-view and maintain a sticky footer within the Bootstrap framework
 - Replaced deprecated `marquee` for weather alerts with [HTML5-Marquee](https://github.com/muchweb/html5-marquee) by [Aleks](https://github.com/muchweb)
 - Rudimentary caching of API requests (experimental, unsure if working in deployment build)
+- CSS transforms used to force hardware acceleration of alert scroller
