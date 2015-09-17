@@ -2,6 +2,8 @@
 
 Five-day weather forecast screens optimized for digital signage (think hotel or company lobby displays). The screens scale for HD (720p), Full HD (1080p), and 4K (both 3840x2160 and 4096x2160).
 
+[![Screenshot](screenshot.png?raw=true)](screenshot.png?raw=true)
+
 ### Features
 - The background image switches based on the current day’s summary from the [forecast.io](https://developer.forecast.io/) API
 - If present in the JSON response, local weather alerts appear as a crawl in the footer
