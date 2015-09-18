@@ -9,7 +9,3 @@ node_js:
 before_script:
   - 'npm install -g bower grunt-cli'
   - 'bower install'
-script:
-  - istanbul cover node_modules/mocha/bin/_mocha
-after_success:
-  - bash <(curl -s https://codecov.io/bash)

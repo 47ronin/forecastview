@@ -10,14 +10,7 @@
  */
 angular
   .module('forecastviewApp', [
-    'ngAnimate',
-    'ngAria',
-    'ngCookies',
-    'ngMessages',
-    'ngResource',
     'ngRoute',
-    'ngSanitize',
-    'ngTouch',
     'angularMoment'
   ])
   .config(function ($routeProvider) {
