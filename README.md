@@ -1,4 +1,4 @@
-# Forecast View [![Build Status](https://travis-ci.org/47ronin/forecastview.svg?branch=master)](https://travis-ci.org/47ronin/forecastview) [![Dependencies](https://david-dm.org/47ronin/forecastview.svg)](https://david-dm.org/47ronin/forecastview)
+# Forecast View [![Build Status](https://travis-ci.org/47ronin/forecastview.svg?branch=master)](https://travis-ci.org/47ronin/forecastview) [![codecov.io](http://codecov.io/github/47ronin/forecastview/coverage.svg?branch=master)](http://codecov.io/github/47ronin/forecastview?branch=master) [![Dependencies](https://david-dm.org/47ronin/forecastview.svg)](https://david-dm.org/47ronin/forecastview)
 
 > Five-day weather forecast screens optimized for digital signage (think hotel or company lobby displays). The screens scale for HD (720p), Full HD (1080p), and 4K (both 3840x2160 and 4096x2160).
 
