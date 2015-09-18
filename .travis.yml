@@ -2,7 +2,6 @@ sudo: false
 language: node_js
 before_install:
   - "nvm use $TRAVIS_NODE_VERSION"
-  - pip install codecov
 node_js:
   - 'iojs'
   - '0.12'
@@ -10,5 +9,7 @@ node_js:
 before_script:
   - 'npm install -g bower grunt-cli'
   - 'bower install'
+script:
+  - istanbul cover node_modules/mocha/bin/_mocha
 after_success:
-  - codecov
+  - bash <(curl -s https://codecov.io/bash)
