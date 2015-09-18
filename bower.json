@@ -11,7 +11,9 @@
     "moment": "~2.10.6",
     "weather-icons": "~2.0.7"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "angular-mocks": "~1.4.6"
+  },
   "appPath": "app",
   "moduleName": "forecastviewApp",
   "overrides": {
