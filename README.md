@@ -1,15 +1,23 @@
 # Forecast View [![Build Status](https://travis-ci.org/47ronin/forecastview.svg?branch=master)](https://travis-ci.org/47ronin/forecastview) [![Dependencies](https://david-dm.org/47ronin/forecastview.svg)](https://david-dm.org/47ronin/forecastview)
 
-Five-day weather forecast screens optimized for digital signage (think hotel or company lobby displays). The screens scale for HD (720p), Full HD (1080p), and 4K (both 3840x2160 and 4096x2160).
+> Five-day weather forecast screens optimized for digital signage (think hotel or company lobby displays). The screens scale for HD (720p), Full HD (1080p), and 4K (both 3840x2160 and 4096x2160).
 
 [![Screenshot](screenshot.png?raw=true)](screenshot.png?raw=true)
 
 ### Features
+- Daily high and low temperature range, humidity, sunrise/sunset times, and conditions summary
 - The background image switches based on the current day’s summary from the [forecast.io](https://developer.forecast.io/) API
 - If present in the JSON response, local weather alerts appear as a crawl in the footer
 
 This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
 version 0.12.1.
+- [Weather Icons][d289182e] by [Erik Flowers][f1a7bc2f]
+- [HTML5 Marquee][e948216e] by [Aleks][0416f599]
+
+  [d289182e]: https://github.com/erikflowers/weather-icons "Weather Icons"
+  [f1a7bc2f]: https://github.com/erikflowers "Erik Flowers"
+  [e948216e]: https://github.com/muchweb/html5-marquee "HTML5 Marquee"
+  [0416f599]: https://github.com/muchweb "Aleks"
 
 ## Installation
 
@@ -44,6 +52,6 @@ Run `grunt serve` for preview, make customizations **only** in the `app/` folder
 - Used linear-gradient to overlay color on full-screen imagary, then shuffled div arrangement to get dynamic background images
 - Adjusted Gruntfile to include Weather Icons in dist build
 - Nested divs to call ng-view and maintain a sticky footer within the Bootstrap framework
-- Replaced deprecated `marquee` for weather alerts with [HTML5-Marquee](https://github.com/muchweb/html5-marquee) by [Aleks](https://github.com/muchweb)
+- Replaced deprecated `marquee` for weather alerts with [HTML5 Marquee][e948216e] by [Aleks][0416f599]
 - Rudimentary caching of API requests (experimental, unsure if working in deployment build)
 - CSS transforms used to force hardware acceleration of alert scroller
