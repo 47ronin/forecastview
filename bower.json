@@ -2,17 +2,17 @@
   "name": "forecastview",
   "version": "0.0.0",
   "dependencies": {
-    "angular": "~1.4.6",
+    "angular": "~1.4.7",
     "angular-moment": "~0.10.3",
-    "angular-route": "~1.4.6",
+    "angular-route": "~1.4.7",
     "bootstrap": "~3.3.5",
     "html5-marquee": "~0.1.2",
     "jquery": "~2.1.4",
     "moment": "~2.10.6",
-    "weather-icons": "~2.0.7"
+    "weather-icons": "~2.0.10"
   },
   "devDependencies": {
-    "angular-mocks": "~1.4.6"
+    "angular-mocks": "~1.4.7"
   },
   "appPath": "app",
   "moduleName": "forecastviewApp",
